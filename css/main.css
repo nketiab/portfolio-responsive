@@ -123,6 +123,22 @@ body {
  h2, h3 {
   font-family: 'Jenriv Bold';
  }
+
+ h2 {
+  letter-spacing: 6px;
+  color: #282829;
+  font-size: 1.5em;
+ }
+
+ h3 {
+  letter-spacing: 4px;
+  color: #353C2F;
+  font-size: 1.2em;
+ }
+ p{
+  color: #353C2F;
+ }
+ 
 /******************** MOBILE STYLES **************/
 
 
@@ -150,7 +166,7 @@ header {
 header h1 {
   font-family: earthan;
   color: #282829;
-  font-size: 60px;
+  font-size: 4.0em;
   padding-left: 120px;
   padding-left: 30px;
   margin: 0;
@@ -168,7 +184,7 @@ header h1 {
   font-size: 0.7em;
   text-align: center;
   margin: 0;
-  letter-spacing: 0.3em;
+  letter-spacing: 2px;
 }
 
 #title-one, #title-two{
@@ -211,15 +227,13 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Jenriv Bold';
 }
 
                         /* About Me */
 
-footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+.about-me {
+  background: #E9E19B;
 }
 
 .about-content{
@@ -229,6 +243,22 @@ footer{
   flex-flow: row wrap;
 }
 
+#tagline {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.bio p span {
+  color: #c5541b;
+}
+
+                        /* Footer */
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 .social {
   display: flex;
   justify-content: space-around;
