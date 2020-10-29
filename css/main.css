@@ -88,6 +88,13 @@ textarea {
    ========================================================================== */
 
 /************************ BASE STYLES ***************************/
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: Jenriv;
+}
+
 @font-face {
   font-family: 'Earthan';
   src: url('../fonts/earthan/earthan.otf') format('opentype');
@@ -109,6 +116,13 @@ textarea {
   flex-flow: row wrap;
 }
 
+body {
+  background: #F4F0CD;
+}
+ 
+ h2, h3 {
+  font-family: 'Jenriv Bold';
+ }
 /******************** MOBILE STYLES **************/
 
 
@@ -120,7 +134,57 @@ header {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
+  background: url('../img/images-icons/typewriter.jpg') center no-repeat;
+  background-size: cover;
+  min-height: 250px;
 }
+
+.hero-area {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+header h1 {
+  font-family: earthan;
+  color: #282829;
+  font-size: 60px;
+  padding-left: 120px;
+  padding-left: 30px;
+  margin: 0;
+}
+
+.hero-titles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+#title-one, #title-two, #title-three{
+  font-family: Jenriv Bold;
+  font-size: 0.7em;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 0.3em;
+}
+
+#title-one, #title-two{
+  margin: 0;
+  color: #353C2F;
+}
+
+#title-three {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  color: #c5541b;
+}
+
+
+
 
                         /* Projects */
 
