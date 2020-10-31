@@ -109,7 +109,7 @@ html {
 }
 
 .content-wrapper {
-  width: 90%;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,12 +131,20 @@ body {
  }
 
  h3 {
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   color: #353C2F;
   font-size: 1.2em;
  }
  p{
   color: #353C2F;
+ }
+
+ figure {
+  margin: 0;
+ }
+
+ img {
+  width: 100%;
  }
  
 /******************** MOBILE STYLES **************/
@@ -230,6 +238,10 @@ section {
   font-family: 'Jenriv Bold';
 }
 
+
+
+
+
                         /* About Me */
 
 .about-me {
@@ -246,10 +258,16 @@ section {
 #tagline {
   text-transform: capitalize;
   font-weight: 700;
+  font-size: 2em;
 }
 
 .bio p span {
   color: #c5541b;
+}
+
+.headshot img {
+  width: 350px;
+  height: 400px;
 }
 
                         /* Footer */
@@ -259,10 +277,22 @@ footer{
   align-items: center;
   flex-flow: row wrap;
 }
+
+
+.footer-content {
+  width: 100%;
+}
+
 .social {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+}
+
+footer i {
+  font-size: 2.5em;
+  color: #c5541b;
 }
 
 .copyright {
@@ -272,6 +302,9 @@ footer{
   width: 100%;
 }
 
+.copyright p {
+  color: #c5541b;
+}
 
 /* ==========================================================================
    Helper classes
