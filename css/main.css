@@ -171,6 +171,7 @@ header {
   align-items: center;
   flex-flow: row wrap;
 }
+
 header h1 {
   font-family: earthan;
   color: #282829;
@@ -306,6 +307,9 @@ footer i {
   color: #c5541b;
 }
 
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -394,8 +398,182 @@ footer i {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 768px) {
+  /* Header  */
+
+
+h2 {
+  font-size: 2.5em;
+
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+header {
+  min-height: 450px;
+}
+
+
+header h1 {
+  font-family: earthan;
+  color: #282829;
+  font-size: 9.0em;
+  padding-left: 120px;
+  padding-left: 30px;
+  margin: 0;
+}
+
+
+#title-one, #title-two, #title-three{
+  font-size: 1.2em;
+  letter-spacing: 2px;
+}
+
+
+
+                        /* Projects */
+
+  .projects .content-wrapper {
+  width: 100%;
+}
+
+
+.projects {
+  min-height: 800px;
+  
+}
+
+
+.projects .content-wrapper {
+  justify-content: space-around;
+}
+
+.project-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+
+.projects article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-basis: 300px;
+
+}
+
+                    /* About Me */
+
+.about-me .content-wrapper {
+  width: 95%;
+}
+#tagline {
+  font-size: 1.2em;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.about-content article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  
+  }
+
+.about-content article .headshot, 
+.about-content article .bio {
+  width: 48%;
+  
+}
+
+.headshot img {
+  width: 100%;
+  height: 100%;
+}
+
+}
+
+
+
+@media only screen and (min-width: 1200px) {
   /* Style adjustments for viewports that meet the condition */
+
+h2 {
+  font-size: 3.5em;
+
+}
+
+h3 {
+  font-size: 2.5em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+header {
+  min-height: 700px;
+}
+
+header h1 {
+  font-family: earthan;
+  color: #282829;
+  font-size: 15em;
+  padding-left: 120px;
+  padding-left: 30px;
+  margin: 0;
+}
+
+#title-one, #title-two, #title-three{
+  font-size: 2.5em;
+  letter-spacing: 2px;
+}
+
+                      /* Projects */
+
+.projects article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 800px;
+  flex-basis: 600px;
+  margin-bottom: 100px;
+
+}
+
+                      /* About Me */
+
+#tagline {
+  font-size: 2.0em;
+}
+
+.about-content article .headshot, 
+.about-content article .bio {
+  flex-basis: 500px;
+}
+
+.headshot img {
+  width: 100%;
+  height: 100%;
+}
+
+
 }
 
 @media print,
